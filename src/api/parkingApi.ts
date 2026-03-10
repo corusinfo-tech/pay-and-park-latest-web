@@ -7,7 +7,7 @@ const parkingApi = axios.create({
   },
 });
 
-// get parking station details
+// get parking station details.
 export const getParkingStations = async () => {
   const response = await parkingApi.get("/user/parking/stations/");
   return response.data;
